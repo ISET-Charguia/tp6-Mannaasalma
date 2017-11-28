@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+ int nbOccurrences(char ch1, char ch2);
+int main(void)
+{
+    char ch1 = " quelbonbonbon ";
+    char ch2 = " bon";
+
+    printf("nb occurrences = %d\n",nbOccurences(ch1,ch2,4));
+}
+    int nbOccurrences(char ch1, char ch2)
+{
+  int i , nbocc=0;
+  for ( i=0 ;i<strlen (ch1); i++)
+  {
+      if (ch1=ch2)
+      {nbocc = nbocc+1;}
+  }
+
+   return nbocc;
+
+
+    return 0;
+}
