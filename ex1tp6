@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+int  estseparateur ( char c);
+int  nbrmot ( char * texte);
+int main()
+{
+    char s [ 256 ];
+	printf ( " entrer votre texte: " );
+	fgets (s, sizeof (s), stdin);
+	printf ( " votre texte contient % d mots. \ n " , nbrmot (s));
+	return 0 ;
+}
+int  estseparateur ( char c)
+{
+	char * sep = " ,;:!?. " ;
+	if ( strlen (sep, c)!= NULL )
+	{
+		return  1 ;
+	}
+	return  0 ;
+	}
+int  nbrmot ( texte char *)
+{
+	int nb = 0 ; int i = 0 ;
+	if (texte! = NULL && strlen (texte)> 0 )
+	{
+		alors que ( estseparateur (text [i]))
+i ++;
+	}
+	for (; i < strlen (texte) - 1 ; i ++)
+	{
+		if ( estseparateur (text [i]) &&! estseparateur (texte [i- 1 ]))
+		{
+			nb ++;
+		}
+	}
+	if (! estseparateur (text [ strlen (text - 2 )]))
+	{
+		nb ++;
+	}
+	return nb;
+}
+return  0 ;
+}
+}
+void  majuscule ( char * ch)
+{ int i = 1 ;
+ch [ 0 ] = ch [ 0 ] - 32 ;
+while (ch [i]! = ' \ 0 ' )
+{
+	if (ch [i] == '  '   || ch [i] == ' ? ' || ch [i] == ' ! ' || ch [i] == ' . ' || ch [i] = = ' ; ' || ch [i] == ' : ' && ch [i]> ' a ' && ch [i] < ' z ' )
+{
+	i ++;
+	ch [i] = ch [i] - 32 ;
+}
+i ++;
+}
+}
+int  main ()
+const int max = 100;
+char ch [max];
+
+}
+}
+}
