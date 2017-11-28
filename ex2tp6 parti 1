@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define MAX 20
+void conjuguer ( char*verbe);
+int main()
+{
+
+char verbe[MAX]="";
+printf("\nEntrer le verbe\n");
+scanf("%s",verbe);
+conjuguer ( verbe);
+}
+void conjuguer ( char *verbe)
+{
+
+int i=0, taille=0;
+while(1){
+taille=strlen(verbe);
+printf("longueur de %d\n",taille);
+printf("je ");
+for(i=0;i<taille-1;i++){
+printf("%c",verbe[i]);
+}
+printf("\n tu ");
+for(i=0;i<taille-1;i++){
+printf("%c",verbe[i]);
+}
+printf("s\n");
+printf("il ");
+for(i=0;i<taille-1;i++){
+printf("%c",verbe[i]);
+}
+printf("\n Nous ");
+for(i=0;i<taille-2;i++){
+printf("%c",verbe[i]);
+}
+printf("ons\n");
+printf("Vous ");
+for(i=0;i<taille-1;i++){
+printf("%c",verbe[i]);
+}
+printf("z\n");
+printf("ils ");
+for(i=0;i<taille-1;i++){
+printf("%c",verbe[i]);
+}
+printf("nt\n");
+
+
+}
+return 0;
+}
